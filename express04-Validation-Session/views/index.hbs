@@ -1,0 +1,31 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+ 
+ {{# if errors}}
+  <div class="alert alert-danger">
+   Please enter correct Email and paasword
+   </div>
+  {{/if}}
+
+ <form  method="POST" action="/submit" >
+
+ <div class="form-group">
+     <label for="Mail">Email</label>
+     <input type="text" name="Mail" class="form-control" >
+     </div>
+      <div class="form-group">
+     <label for="Paasword">Password</label>
+     <input type="password" name="Paasword" class="form-control">
+     </div>
+      <div class="form-group">
+     <label for="ConfirmPaasword">ConfirmPassword</label>
+     <input type="password" name="ConfirmPaasword" class="form-control">
+     </div>
+     
+     </div>
+
+     <button type="submit">SignUp</button>
+
+
+
+ </form>

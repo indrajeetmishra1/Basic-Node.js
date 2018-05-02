@@ -1,0 +1,35 @@
+ {{!-- {{# each items}}
+       <article>
+          <div>Title:{{this.title}}</div>
+          <div>Content:{{this.content}}</div>
+          <div>Author:{{this.author}}</div>
+
+       </article>
+  {{/each}} --}}
+
+
+<div class="container">
+  <h2>List of books</h2>
+         
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+          <th>Id</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th> Author</th>
+      </tr>
+    </thead>
+    <tbody>
+         {{# each items}}
+      <tr>
+          <td>{{this._id}}</td>
+        <td>{{this.title}}</td>
+        <td>{{this.content}}</td>
+        <td>{{this.author}}</td>
+      </tr>
+      {{/each}}
+
+    </tbody>
+  </table>
+</div>

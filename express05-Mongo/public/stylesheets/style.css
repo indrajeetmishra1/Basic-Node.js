@@ -1,0 +1,34 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.equal, .equal > div[class*='col-'] {  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex:1 0 auto;
+}
+
+
+.bcolor{
+
+  background-color: aqua;
+}
+.bcolor1{
+  background-color: #00B7FF;
+}
+.bcolor2{
+  background-color: gray
+}
+.bcolor3{
+  background-color:gold;
+}
